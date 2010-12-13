@@ -1,0 +1,30 @@
+<html t:type="layout" title="tapestry5-banquet Index"
+      t:sidebarTitle="Current Time"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+    <p>Welcome !<br/>
+    You can compose your meal.
+    </p>
+    
+    <t:form t:id="meal">
+    	<t:label for="mainCourse">
+    		Main Course :
+    	</t:label>
+    	<t:select t:model="mainCourse" t:value="mainCourseChosen" t:id="mainCourse"/>
+    	<br/>
+    	<t:label for="coffee">
+    		Coffee :
+    	</t:label>
+    	<t:checkbox value="coffee" t:id="coffee"/>
+    	<br/>
+    	<t:label for="dessert">
+    		Dessert :
+    	</t:label>
+    	<t:textfield t:value="dessert" t:id="dessert"/>
+    	<br/>
+    	<t:submit/>
+    </t:form>
+
+</html>

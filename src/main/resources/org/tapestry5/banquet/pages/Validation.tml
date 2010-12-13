@@ -1,0 +1,28 @@
+<html t:type="layout" title="tapestry5-banquet Index"
+      t:sidebarTitle="Current Time"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+    <p>Here is what you've ordered.
+    </p>
+    
+    <ul t:type="loop" t:source="user.meal" t:value="currentMeal">
+    	<li>${currentMeal}</li>
+    </ul>
+    
+    <b>
+    The price is 20 ${message:money}
+    </b>
+    
+    <p>Please complete the delivery information</p>
+    <t:beaneditform t:object="delivery" t:id="deliver">
+    	<p:city>
+    		<t:label for="city">
+    			City
+    		</t:label>
+    		<t:textfield t:value="cityChosen" t:mixins="autocomplete" t:id="city"/>
+    	</p:city>
+    </t:beaneditform>
+    
+</html>
