@@ -1,0 +1,12 @@
+ very simple tapestry5 application that may be used for screencast purpose
+
+this app has 2 pages
+
+it demonstrates :
+- the form component (select, checkbox, textfield, validation)
+- persistence (SessionState and Persist)
+- loop component
+- beaneditform component
+- autocomplete mixin
+- datefield
+- ${message:...}
